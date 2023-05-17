@@ -95,14 +95,14 @@ if __name__ == "__main__":
             speak(f"Sir, the time is {strTime}")
 
         elif 'open code' in query:
-            codePath = "C:\\Users\\Swaraj\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            codePath = "C:\\Users\\Aman\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
 
         elif 'email to swaraj' in query:
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "swaraj.20scse1010813@galgotiasuniversity.edu.in"    
+                to = "aman.20scse1010794@galgotiasuniversity.edu.in"    
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
